@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_toLeftOf="@+id/spinemid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dia"
+        android:text="DOMINGO"
+        android:textStyle="bold"
+        android:paddingTop="7sp"
+        android:paddingBottom="7sp"
+        />
+
+    <TextView
+        android:id="@+id/fecha"
+        android:layout_below="@+id/dia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16sp"
+        android:text="13.11.2015"
+        android:textSize="18sp"
+        />
+
+    <View
+        android:layout_toRightOf="@+id/fecha"
+        android:layout_width="16sp"
+        android:layout_height="match_parent"
+        android:id="@+id/spinemid"
+        />
+
+    <TextView
+        android:layout_toRightOf="@+id/spinemid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tipo"
+        android:paddingBottom="7sp"
+        android:paddingTop="7sp"
+        android:textSize="13sp"
+        android:text="TEATRO"
+        android:textColor="#12A89C"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/nombre"
+        android:layout_below="@+id/tipo"
+        android:layout_toRightOf="@+id/spinemid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EL CAVERNICOLA"
+        />
+
+    <TextView
+        android:id="@+id/bar"
+        android:layout_toRightOf="@+id/nombre"
+        android:layout_below="@+id/tipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" | "/>
+
+    <TextView
+        android:id="@+id/hora"
+        android:layout_toRightOf="@+id/bar"
+        android:layout_below="@+id/tipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20:00 HRS"
+        android:textStyle="bold"
+        />
+
+</RelativeLayout>

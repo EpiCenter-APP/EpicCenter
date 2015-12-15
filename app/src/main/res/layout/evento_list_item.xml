@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="@dimen/activity_horizontal_margin"
+    android:layout_marginBottom="@dimen/activity_horizontal_margin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageList"
+        android:src="@drawable/frame"
+        android:layout_width="85sp"
+        android:layout_height="85sp" />
+
+    <View
+        android:id="@+id/leftSpine"
+        android:layout_toRightOf="@+id/imageList"
+        android:layout_width="@dimen/activity_vertical_margin"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:textColor="#12A89C"
+        android:layout_toRightOf="@id/leftSpine"
+        android:id="@+id/tipoEvento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5sp"
+        android:textSize="13sp"
+        android:text="TEATRO"/>
+
+    <TextView
+        android:layout_toRightOf="@+id/leftSpine"
+        android:layout_below="@+id/tipoEvento"
+        android:id="@+id/nombreEvento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="7sp"
+        android:text="EL CAVERNICOLA"/>
+
+    <TextView
+        android:layout_toRightOf="@+id/leftSpine"
+        android:layout_below="@+id/nombreEvento"
+        android:id="@+id/eventoFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="13.11.2015"
+        android:paddingBottom="5sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/slash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/eventoFecha"
+        android:layout_below="@id/nombreEvento"
+        android:text=" / "
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/slash"
+        android:id="@+id/hora"
+        android:layout_below="@+id/nombreEvento"
+        android:text="20:00 HRS"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_toRightOf="@+id/leftSpine"
+        android:layout_below="@+id/eventoFecha"
+        android:id="@+id/eventoLocalizacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Teatro Luis Poma"
+        />
+
+    <TextView
+        android:id="@+id/eventoComentario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="123"
+        android:paddingTop="5sp"
+        android:paddingLeft="3sp"
+        android:layout_below="@+id/eventoFecha"
+        android:layout_alignParentRight="true" />
+
+    <ImageView
+        android:layout_below="@+id/eventoFecha"
+        android:layout_toLeftOf="@id/eventoComentario"
+        android:src="@drawable/coment"
+        android:id="@+id/comentIcon"
+        android:layout_width="23sp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_below="@+id/eventoFecha"
+        android:layout_toLeftOf="@id/comentIcon"
+        android:id="@+id/eventoLike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="231"
+        android:paddingTop="5sp"
+        android:paddingLeft="3sp"
+        />
+
+    <ImageView
+        android:layout_below="@+id/eventoFecha"
+        android:layout_toLeftOf="@+id/eventoLike"
+        android:src="@drawable/like"
+        android:layout_width="23sp"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

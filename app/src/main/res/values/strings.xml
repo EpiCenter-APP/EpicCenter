@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Arte&amp;Relax</string>
+    <string name="app_name2">Epicenter</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string-array name="ubicaciones_eventos">
+        <item>Mostrar todos</item>
+        <item>Noviembre 2015</item>
+        <item>Diciembre 2015</item>
+    </string-array>
+
+
+
+    <string name="spinner_title">FECHAS</string>
+
+    <string-array name="fechas_array">
+
+        <item>Nov 2015</item>
+        <item>Dec 2015</item>
+        <item>Ene 2016</item>
+        <item>Feb 2016</item>
+        <item>Mar 2016</item>
+        <item>Abr 2016</item>
+        <item>May 2016</item>
+        <item>Jun 2016</item>
+
+    </string-array>
+
+</resources>

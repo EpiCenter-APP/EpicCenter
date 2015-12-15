@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:checked="true"
+            android:id="@+id/home"
+            android:title="Pantalla principal"
+            android:icon="@mipmap/home"
+            />
+
+        <item android:id="@+id/concierto_id"
+            android:title="Conciertos"
+            android:icon="@mipmap/microphone"/>
+
+        <item android:id="@+id/teatro_id"
+            android:title="Teatro"
+            android:icon="@mipmap/teatro"/>
+
+        <item android:id="@+id/expo_id"
+            android:title="Exposiciones"
+            android:icon="@mipmap/presentation"/>
+
+        <item android:id="@+id/fiestas_id"
+            android:title="Fiestas"
+            android:icon="@mipmap/fiestas"/>
+
+        <item android:id="@+id/danza_id"
+            android:title="Danza"
+            android:icon="@mipmap/danza"/>
+
+        <item android:id="@+id/login_id"
+            android:title="Login"
+            android:icon="@mipmap/login"/>
+
+    </group>
+
+</menu>

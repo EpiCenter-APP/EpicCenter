@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/banner"
+                android:src="@drawable/banner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                />
+
+            <Button
+                android:layout_width="180dp"
+                android:layout_height="52dp"
+                android:layout_gravity="center"
+                android:text="Unirte"
+                android:textSize="21sp"
+                android:textAllCaps="false"
+                android:textColor="#FFF"
+                android:padding="10dp"
+                android:background="@drawable/buttonshape"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_alignBottom="@+id/banner"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="71dp" />
+
+            <TextView
+                android:paddingLeft="@dimen/activity_vertical_margin"
+                android:paddingTop="@dimen/activity_horizontal_margin"
+                android:paddingBottom="7sp"
+                android:id="@+id/type"
+                android:layout_below="@+id/banner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#12A89C"
+                android:text="CONCIERTO"
+                />
+
+            <TextView
+                android:layout_below="@+id/type"
+                android:paddingLeft="@dimen/activity_vertical_margin"
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:paddingBottom="7sp"
+                android:text="DASH BERLIN"/>
+
+            <TextView
+                android:id="@+id/time"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingBottom="7sp"
+                android:layout_below="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13.11.2015 / 20:00 HRS"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_below="@+id/time"
+                android:paddingLeft="@dimen/activity_vertical_margin"
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scenarium\nMayores de 18 años\nCosto $30 - $50"
+                android:textSize="17sp"
+                />
+
+            <TextView
+                android:id="@+id/comments"
+                android:paddingRight="@dimen/activity_vertical_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="231"
+                android:textSize="16sp"
+                android:layout_alignTop="@+id/time"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <ImageView
+                android:layout_below="@+id/name"
+                android:layout_toLeftOf="@+id/comments"
+                android:id="@+id/iconcome"
+                android:layout_width="23sp"
+                android:src="@drawable/coment"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_below="@+id/name"
+                android:layout_toLeftOf="@+id/iconcome"
+                android:id="@+id/likes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="889"
+                android:textSize="16sp"
+                />
+
+            <ImageView
+                android:layout_below="@id/name"
+                android:layout_toLeftOf="@+id/likes"
+                android:src="@drawable/like"
+                android:layout_width="23sp"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mep"
+                android:src="@drawable/err"
+                android:layout_below="@+id/location" />
+
+            <TextView
+                android:paddingLeft="@dimen/activity_vertical_margin"
+                android:paddingTop="@dimen/activity_horizontal_margin"
+                android:paddingBottom="7sp"
+                android:id="@+id/comentext"
+                android:layout_below="@+id/mep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#12A89C"
+                android:text="COMENTARIOS"
+                />
+
+            <ImageView
+                android:paddingRight="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_vertical_margin"
+                android:paddingBottom="10sp"
+                android:src="@drawable/coment"
+                android:layout_below="@+id/comentext"
+                android:id="@+id/comment1"
+                android:layout_width="23sp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buenisimos sus conciertos."
+                android:textSize="16sp"
+                android:layout_below="@+id/comentext"
+                android:layout_toRightOf="@id/comment1"/>
+
+            <ImageView
+                android:paddingRight="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_vertical_margin"
+                android:paddingBottom="10sp"
+                android:src="@drawable/coment"
+                android:layout_width="23sp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/comment1"
+                android:id="@+id/comment2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/comment1"
+                android:text="Muy bueno, lasitma que se pressenta ese dia..."
+                android:textSize="16sp"
+                android:layout_toRightOf="@+id/comment2"
+                />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
